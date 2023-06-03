@@ -1,0 +1,19 @@
+name: "on-commit"
+description: "Detect word from commit message"
+author: "tai-kun"
+inputs:
+  commits:
+    description: "JSON representation of the commits"
+    required: false
+    default: "${{ toJSON(github.event.commits) }}"
+  pattern:
+    description: "Regex pattern to match commit message"
+    required: false
+    default: ""
+  flags:
+    description: "Regex flags"
+    required: false
+    default: "u"
+runs:
+  using: "node16"
+  main: "dist/index.cjs"

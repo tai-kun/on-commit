@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test 1`] = `
+"::debug::regex: /v(?<version>(?<versionMajor>(0|[1-9]\\d*))\\.(?<versionMinor>(0|[1-9]\\d*))\\.(?<versionPatch>(0|[1-9]\\d*))(?<versionTag>(-(?<versionTagName>\\w+)\\.(?<versionTagNumber>(0|[1-9]\\d*))))?)\\s*$/
+::debug::[%0A  {%0A    "author": {%0A      "email": "foo@bar.baz",%0A      "name": "foo",%0A      "username": "foo"%0A    },%0A    "committer": {%0A      "email": "foo@bar.baz",%0A      "name": "foo",%0A      "username": "foo"%0A    },%0A    "id": "9a6747fc6259aa374ab4e1bb03074b6ec672cf99",%0A    "message": "🚀 ビルド",%0A    "tree_id": "553ae7da92f5505a92bbb8c9d47be76ab9f65bc2",%0A    "url": "https://github.com/foo/bar/commit/9a6747fc6259aa374ab4e1bb03074b6ec672cf99"%0A  },%0A  {%0A    "author": {%0A      "email": "foo@bar.baz",%0A      "name": "foo",%0A      "username": "foo"%0A    },%0A    "committer": {%0A      "email": "foo@bar.baz",%0A      "name": "foo",%0A      "username": "foo"%0A    },%0A    "id": "9a6747fc6259aa374ab4e1bb03074b6ec672cf99",%0A    "message": "🔖 v2.2.0",%0A    "tree_id": "553ae7da92f5505a92bbb8c9d47be76ab9f65bc2",%0A    "url": "https://github.com/foo/bar/commit/9a6747fc6259aa374ab4e1bb03074b6ec672cf99"%0A  }%0A]
+::debug::message: 🔖 v2.2.0
+::debug::RegExpExecArray.groups: ["v2.2.0","2.2.0","2","2","2","2","0","0",null,null,null,null,null]
+::debug::RegExpExecArray.groups: {"version":"2.2.0","versionMajor":"2","versionMinor":"2","versionPatch":"0"}
+::debug::{"version":"2.2.0","version-major":"2","version-minor":"2","version-patch":"0","version-tag":"","version-tag-name":"","version-tag-number":""}
+
+::set-output name=version::2.2.0
+
+::set-output name=version-major::2
+
+::set-output name=version-minor::2
+
+::set-output name=version-patch::0
+
+::set-output name=version-tag::
+
+::set-output name=version-tag-name::
+
+::set-output name=version-tag-number::
+
+::set-output name=commit-author-email::foo@bar.baz
+
+::set-output name=commit-author-name::foo
+
+::set-output name=commit-author-username::foo
+
+::set-output name=commit-committer-email::foo@bar.baz
+
+::set-output name=commit-committer-name::foo
+
+::set-output name=commit-id::9a6747fc6259aa374ab4e1bb03074b6ec672cf99
+
+::set-output name=commit-message::🔖 v2.2.0
+
+::set-output name=commit-tree-id::553ae7da92f5505a92bbb8c9d47be76ab9f65bc2
+
+::set-output name=commit-url::https://github.com/foo/bar/commit/9a6747fc6259aa374ab4e1bb03074b6ec672cf99
+
+::set-output name=matched::true
+"
+`;
